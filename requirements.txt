@@ -13,10 +13,8 @@ scattertext==0.1.0.0
 matplotlib==3.1.2
 pandas==1.1.5
 pycountry==20.7.3
-git+https://github.com/JustAnotherArchivist/snscrape.git
+
 geocoder==1.38.1
 numpy==1.18.3
-Pillow==8.1.0
-vaderSentiment==3.3.2
-empath
+
 plotly==5.1.0
