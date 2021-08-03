@@ -21,6 +21,9 @@ def app():
     if st.button('Calculate!'):
         st.write("Your results are below:")
 
+        st.write("Floor Area:", floor_area)
+        st.write("Number of floors:", number_floors)
+
 
 
 
