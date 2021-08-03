@@ -6,19 +6,26 @@ def app():
     st.title('Energy Cost Calculator')
     st.write("Please enter some information about your home, and we'll calculate your energy costs!")
 
-    st.number_input('Total floor area')
-    st.selectbox('Number of floors', [1, 2, 3])
-    st.selectbox('Climate zone', [1, 2, 3])
+    floor_area =  st.number_input('Total floor area')
+    number_floors = st.selectbox('Number of floors', [1, 2, 3])
+    climate_zone = st.selectbox('Climate zone', [1, 2, 3])
 
-    st.multiselect('Space Heater', [1, 2, 3])
-    st.multiselect('Water Heater', [1, 2, 3])
+    space_heater = st.multiselect('Space Heater', [1, 2, 3])
+    water_heater = st.multiselect('Water Heater', [1, 2, 3])
 
-    st.selectbox('Utility Company', ['PG&E', 'TID', 'SCE', "Other"])
+    utility = st.selectbox('Utility Company', ['PG&E', 'TID', 'SCE', "Other"])
 
-    st.selectbox('Rate Schedule', [1, 2, 3])
+    rate_schedule = st.selectbox('Rate Schedule', [1, 2, 3])
 
     #st.select_slider('Slide to select', options=[1, '2'])
-    st.button('Calculate!')
+    if st.button('Calculate!'):
+        st.write("Your results are below:")
+
+
+
+
+
+
 
 
 
